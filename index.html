@@ -3,9 +3,27 @@
 <head>
     <title>Client Side Form</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <form id="saveForm">
+            Name: <br><input type="text"><br>
+            Address: <br><input type="text"><br>
+            Age: <br><input type="text"><br>
+            Pets:<br><input id="petCheckbox" type="checkbox"><br>
+            <div id="petSelect">
+                Pet: <br><select>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Bird</option>
+                    <option>Other</option>
+                </select><br>
+            </div>
+            <br><input id="saveButton" type="submit">
+        </form>
+    </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
